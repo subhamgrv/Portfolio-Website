@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaggle Projects</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Menu -->
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="kaggle.html" class="active">Kaggle Projects</a></li>
+                    <li><a href="About me.html">About me</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <h1>Kaggle Projects</h1>
+
+            <!-- Existing Kaggle Projects -->
+            <ul id="kaggle-list">
+                <li>Titanic - Machine Learning from Disaster</li>
+                <li>House Prices - Advanced Regression Techniques</li>
+                <li>Digit Recognizer - Handwritten Digit Classification</li>
+            </ul>
+
+            <!-- Form to Add New Kaggle Project -->
+            <h2>Add a New Kaggle Project</h2>
+            <form id="kaggle-form">
+                <input type="text" id="kaggle-name" placeholder="Kaggle Project Name" required>
+                <input type="url" id="kaggle-url" placeholder="Kaggle Repository URL" required>
+                <button type="submit">Add Kaggle Project</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

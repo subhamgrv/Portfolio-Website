@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Menu -->
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="kaggle.html">Kaggle Projects</a></li>
+                    <li><a href="About me.html">About me</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <h1>Projects</h1>
+            
+            <!-- Existing Projects -->
+            <ul id="project-list">
+                <li>Life Insurance Management System (LIMS) - MySQL, Java</li>
+                <li>Behavioral-based Students' Stress Detection - Python, OpenCV</li>
+                <li>Basic Banking App - Java, Android</li>
+            </ul>
+
+            <!-- Form to Add New Project -->
+            <h2>Add a New Project</h2>
+            <form id="project-form">
+                <input type="text" id="project-name" placeholder="Project Name" required>
+                <input type="text" id="project-description" placeholder="Project Description" required>
+                <button type="submit">Add Project</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

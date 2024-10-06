@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh; /* Ensures full height alignment */
+}
+
+/* Sidebar */
+
+
+/* Main Content */
+.content {
+    background-color: #111;
+    color: #fff;
+    width: 80%; /* Main content takes the remaining space */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 60%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: #01c4c4;
+    margin-bottom: 10px;
+}
+
+.hero-text .profession {
+    font-size: 1.5rem;
+    color: #01c4c4;
+    margin-bottom: 15px;
+}
+
+.hero-text .description {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.hero-text .btn {
+    padding: 10px 20px;
+    background-color: #01c4c4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero-text .btn:hover {
+    background-color: #028b8b;
+}
+
+.hero-image img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* Theme Selector */
+.theme-selector {
+    margin-top: 40px;
+}
+
+.theme-selector p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.theme-selector .colors {
+    display: flex;
+    gap: 10px;
+}
+
+.theme-selector .color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.red { background-color: red; }
+.orange { background-color: orange; }
+.green { background-color: green; }
+.blue { background-color: blue; }
+.pink { background-color: pink; }
