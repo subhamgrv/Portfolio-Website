@@ -63,19 +63,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    const sidebar = `
-        <aside class="sidebar">
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="kaggle.html">Kaggle Projects</a></li>
-                    <li><a href="About me.html">About me</a></li>
-                </ul>
-            </nav>
-        </aside>
-    `;
-    document.getElementById("sidebar-placeholder").innerHTML = sidebar;
+    // Load the sidebar HTML
+    fetch('sidebar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("sidebar-placeholder").innerHTML = data;
+        })
+        .catch(error => console.error('Error loading sidebar:', error));
 });
 

@@ -5,6 +5,21 @@
     box-sizing: border-box;
 }
 
+
+.container {
+    display: flex; /* Enables flexbox layout */
+}
+
+.sidebar {
+    /* Sidebar styles as previously defined */
+}
+
+.content {
+    flex-grow: 1; /* Makes the main content take up remaining space */
+    padding: 20px; /* Optional padding */
+    background-color: #f9f9f9; /* Optional background color */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -19,51 +34,56 @@ body {
     min-height: 100vh; /* Ensures full height alignment */
 }
 
-/* Sidebar */
-        /* Sidebar-specific styles */
-        .sidebar {
-            background-color: #222;
-            color: #fff;
-            width: 20%;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Horizontally center */
-            justify-content: center; /* Vertically center */
-            height: 100vh; /* Full viewport height */
-        }
+/* Sidebar-specific styles */
+.sidebar {
+    background-color: #222;
+    color: #fff;
+    width: 20%; /* Width of the sidebar */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center */
+    justify-content: flex-start; /* Align content at the top */
+    height: 100vh; /* Full viewport height */
+}
 
-        .sidebar nav {
-            flex-grow: 1; /* Make the nav grow to fill available space */
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Center the list vertically */
-            width: 100%; /* Ensure the links fill the available space */
-        }
+.sidebar img {
+    width: 80%; /* Adjust image width as needed */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 20px; /* Space between the image and the menu */
+}
 
-        .sidebar nav ul {
-            list-style-type: none;
-            padding: 0;
-            width: 100%;
-        }
+.sidebar nav {
+    flex-grow: 1; /* Make the nav grow to fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align the nav at the top */
+    width: 100%; /* Ensure the links fill the available space */
+}
 
-        .sidebar nav ul li {
-            margin: 15px 0;
-            text-align: center;
-        }
+.sidebar nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    width: 100%; /* Full width */
+}
 
-        .sidebar nav ul li a {
-            color: #aaa;
-            text-decoration: none;
-            font-size: 1.1rem;
-            display: block; /* Makes the links block-level elements */
-            padding: 10px 0;
-        }
+.sidebar nav ul li {
+    margin: 15px 0; /* Space between menu items */
+    text-align: center; /* Center the text */
+}
 
-        .sidebar nav ul li a.active,
-        .sidebar nav ul li a:hover {
-            color: #01c4c4;
-        }
+.sidebar nav ul li a {
+    color: #aaa; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.1rem; /* Font size */
+    display: block; /* Makes the links block-level elements */
+    padding: 10px 0; /* Padding around the links */
+}
+
+.sidebar nav ul li a.active,
+.sidebar nav ul li a:hover {
+    color: #01c4c4; /* Change color on hover */
+}
 
 /* Main Content */
 .content {
