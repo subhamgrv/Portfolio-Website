@@ -20,7 +20,50 @@ body {
 }
 
 /* Sidebar */
+        /* Sidebar-specific styles */
+        .sidebar {
+            background-color: #222;
+            color: #fff;
+            width: 20%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Horizontally center */
+            justify-content: center; /* Vertically center */
+            height: 100vh; /* Full viewport height */
+        }
 
+        .sidebar nav {
+            flex-grow: 1; /* Make the nav grow to fill available space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center the list vertically */
+            width: 100%; /* Ensure the links fill the available space */
+        }
+
+        .sidebar nav ul {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+        }
+
+        .sidebar nav ul li {
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .sidebar nav ul li a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 1.1rem;
+            display: block; /* Makes the links block-level elements */
+            padding: 10px 0;
+        }
+
+        .sidebar nav ul li a.active,
+        .sidebar nav ul li a:hover {
+            color: #01c4c4;
+        }
 
 /* Main Content */
 .content {

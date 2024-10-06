@@ -1,61 +1,27 @@
-<aside class="sidebar">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="kaggle.html" class="active">Kaggle Projects</a></li>
-            <li><a href="about-me.html">About me</a></li>
-        </ul>
-    </nav>
-</aside>
-
-<!-- Sidebar-specific styles -->
-<style>
-/* Sidebar-specific styles */
-.sidebar {
-    background-color: #222;
-    color: #fff;
-    width: 20%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Horizontally center */
-    justify-content: center; /* Vertically center */
-    height: 100vh; /* Full viewport height */
-}
-
-.sidebar nav {
-    flex-grow: 1; /* Make the nav grow to fill available space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center the list vertically */
-    width: 100%; /* Ensure the links fill the available space */
-}
-
-.sidebar nav ul {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
-}
-
-.sidebar nav ul li {
-    margin: 15px 0;
-    text-align: center;
-}
-
-.sidebar nav ul li a {
-    color: #aaa;
-    text-decoration: none;
-    font-size: 1.1rem;
-    display: block; /* Makes the links block-level elements */
-    padding: 10px 0;
-}
-
-.sidebar nav ul li a.active,
-.sidebar nav ul li a:hover {
-    color: #01c4c4;
-}
-
-
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Menu -->
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="kaggle.html" class="active">Kaggle Projects</a></li>
+                    <li><a href="about-me.html">About me</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Other content goes here -->
+    </div>
+</body>
+</html>
