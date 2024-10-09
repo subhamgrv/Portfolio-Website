@@ -1,54 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Home</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subham Gaurav's Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Link to FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Link to Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+  <style>
+    /* CSS for Animated Text */
+    .animated-text {
+      font-weight: bold;
+      color: #ff6600;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <!-- Sidebar Menu -->
-        <aside class="sidebar">
-            <img src="images/profile.jpg" alt="Profile Image" style="width: 100%; border-radius: 50%; margin-bottom: 20px;">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="kaggle.html" class="active">Kaggle Projects</a></li>
-                    <li><a href="aboutme.html">About me</a></li>
-                </ul>
-            </nav>
-        </aside>
+  <!-- Particles.js container, added as a background -->
+  <div id="particles-js"></div>
 
-        <!-- Main Content Area -->
-        <main class="content">
-            <!-- Hero Section -->
-            <section class="hero">
-                <div class="hero-text">
-                    <p>Hello, my name is</p>
-                    <h1>Subham Gaurav</h1>
-                    <p class="profession">I'm a Web Developer</p>
-                    <p class="description">I specialize in creating and designing websites, graphic design, and much more.</p>
-                    <button class="btn"><a href="aboutme.html">More About Me</a></button>
-                </div>
-            </section>
+  <header>
+    <nav>
+      <div class="logo">Subham Gaurav</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="kaggle.html">Kaggle</a></li>
+        <li><a href="aboutme.html">aboutme</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <!-- Theme Colors Selector -->
-            <div class="theme-selector">
-                <p>Theme Colors</p>
-                <div class="colors">
-                    <span class="color red" data-color="red"></span>
-                    <span class="color orange" data-color="orange"></span>
-                    <span class="color green" data-color="green"></span>
-                    <span class="color blue" data-color="blue"></span>
-                    <span class="color pink" data-color="pink"></span>
-                </div>
-            </div>
-        </main>
+  <section class="home">
+    <div class="home-content">
+      <div class="greeting">
+        <span>Hi 👋,</span>
+        <h1>I'm <span class="highlight">Subham Gaurav</span></h1>
+        <img src="images/profile.jpg" alt="Subham Gaurav" class="profile-img">
+
+        <p>
+        <!-- Adding the animated text here -->
+        <span style="display: inline;">I am into <span class="animated-text"
+            data-words="Data Science, Web Development, Open Source"></span></span>
+      </div></p>
+
+      <div class="social-icons">
+        <a href="#" class="icon"><i class="fas fa-globe"></i> CV</a>
+        <a href="#" class="icon"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="#" class="icon"><i class="fab fa-github"></i> GitHub</a>
+        <a href="#" class="icon"><i class="fas fa-cogs"></i> Kaggle</a>
+      </div>
     </div>
+  </section>
 
-    <script src="js/script.js"></script>
+  <footer>
+    <p>Deployed on GitHub Pages</p>
+  </footer>
+
+  <!-- JavaScript for animated text -->
+  <script src="js/animateText.js"></script>
+
+  <!-- Link to particles-config.js -->
+  <script src="js/particles-config.js"></script>
 </body>
+
 </html>

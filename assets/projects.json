@@ -1,0 +1,72 @@
+{
+    "projects": [
+      {
+        "name": "Life Insurance Management System",
+        "duration": "09/2020 – 01/2021",
+        "description": "A web-based application software for managing life insurance activities...",
+        "features": [
+          "Stores customer and policy details securely",
+          "Confidential information for non-users",
+          "Provides dynamic tools for insurance policies and schemes"
+        ],
+        "technologies_used": {
+          "operating_system": "Windows 10",
+          "front_end": ["HTML", "CSS"],
+          "back_end": "PHP",
+          "database": "MySQL"
+        },
+        "image": "assets/images/life_insurance_management.png"
+      },
+      {
+        "name": "Unidentified Flying Objects",
+        "duration": "04/2021 – 07/2021",
+        "description": "A project that simulates Unidentified Flying Objects (UFOs)...",
+        "features": [
+          "Add UFO",
+          "Remove UFO",
+          "Motion on/off",
+          "UFO motion speed varies with number of UFOs on screen"
+        ],
+        "technologies_used": {
+          "operating_system": "Ubuntu",
+          "languages": ["C"],
+          "tools_used": ["OpenGL"]
+        },
+        "image": "assets/images/ufo_project.png"
+      },
+      {
+        "name": "Basic Banking App",
+        "duration": "04/2021 – 07/2021",
+        "description": "An Android-based banking management system...",
+        "features": [
+          "Manage Current and Saving Accounts",
+          "Track Transactions",
+          "Employee and Customer Management"
+        ],
+        "technologies_used": {
+          "operating_system": "Microsoft",
+          "software": ["Android Studio"],
+          "web_browser": "Firebase"
+        },
+        "image": "assets/images/banking_app.png"
+      },
+      {
+        "name": "Behavioral-Based Student Stress Detection with Attendance Management System",
+        "duration": "09/2021 – 07/2022",
+        "description": "A system to detect stress levels in students...",
+        "features": [
+          "Facial expression recognition for stress detection",
+          "Image acquisition and preprocessing",
+          "Supervised learning for classification"
+        ],
+        "technologies_used": {
+          "operating_system": "Windows XP/Windows 7",
+          "software_tool": "OpenCV Python",
+          "coding_language": "Python",
+          "toolbox": "Image processing toolbox"
+        },
+        "image": "assets/images/stress_detection.png"
+      }
+    ]
+  }
+  

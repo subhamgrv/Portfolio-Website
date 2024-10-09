@@ -1,0 +1,74 @@
+
+        /* Your existing styles */
+        .projects-section {
+            padding: 50px;
+            text-align: center;
+        }
+    
+        .projects-section h2 {
+            font-size: 36px;
+            color: #f0a500;
+        }
+    
+        .projects-section p {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+    
+        .project-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+    
+        .project-card {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+    
+        .project-card img {
+            width: 100%; /* Set the width of the image to fill the container */
+            height: 200px; /* Set a fixed height for uniformity */
+            object-fit: cover; /* Ensure the image covers the entire area without distortion */
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    
+        .project-card h3 {
+            color: #f0a500;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+    
+        /* Hide the project details by default */
+        .project-details {
+            display: none;
+            text-align: left;
+            margin-top: 20px;
+        }
+    
+        /* Show details when the project card has 'show-details' class */
+        .project-card.show-details .project-details {
+            display: block;
+        }
+    
+        .project-card p, .project-card ul {
+            font-size: 16px;
+            color: #fff;
+        }
+    
+        .project-card ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    
+        .project-card h3 {
+            color: #f0a500;
+        }

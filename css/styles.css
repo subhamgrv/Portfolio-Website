@@ -1,171 +1,213 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-.container {
-    display: flex; /* Enables flexbox layout */
-}
-
-.sidebar {
-    /* Sidebar styles as previously defined */
-}
-
-.content {
-    flex-grow: 1; /* Makes the main content take up remaining space */
-    padding: 20px; /* Optional padding */
-    background-color: #f9f9f9; /* Optional background color */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    min-height: 100vh;
-    margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
 }
 
-/* Container Layout */
-.container {
-    display: flex;
-    width: 100%;
-    min-height: 100vh; /* Ensures full height alignment */
+/* Header */
+header {
+  background-color: #1a1a1a;
+  padding: 20px;
 }
 
-/* Sidebar-specific styles */
-.sidebar {
-    background-color: #222;
-    color: #fff;
-    width: 20%; /* Width of the sidebar */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Horizontally center */
-    justify-content: flex-start; /* Align content at the top */
-    height: 100vh; /* Full viewport height */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.sidebar img {
-    width: 80%; /* Adjust image width as needed */
-    border-radius: 50%; /* Make the image circular */
-    margin-bottom: 20px; /* Space between the image and the menu */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
 }
 
-.sidebar nav {
-    flex-grow: 1; /* Make the nav grow to fill available space */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align the nav at the top */
-    width: 100%; /* Ensure the links fill the available space */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.sidebar nav ul {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove padding */
-    width: 100%; /* Full width */
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
 }
 
-.sidebar nav ul li {
-    margin: 15px 0; /* Space between menu items */
-    text-align: center; /* Center the text */
+.nav-links li a:hover {
+  color: #f0a500;
 }
 
-.sidebar nav ul li a {
-    color: #aaa; /* Link color */
-    text-decoration: none; /* Remove underline from links */
-    font-size: 1.1rem; /* Font size */
-    display: block; /* Makes the links block-level elements */
-    padding: 10px 0; /* Padding around the links */
+.logo {
+  font-family: 'Lobster', cursive; /* Applying the custom logo font */
+  font-size: 26px; /* Adjusted font size for logo */
+  font-weight: normal; /* No need for bold as the font is naturally stylized */
+  color: #f0a500; /* Distinct color */
+  letter-spacing: 1px; /* Slight letter spacing */
+  text-transform: uppercase; /* Uppercase for a professional look */
+  border: 1px solid #f0a500; /* Fine border for definition */
+  padding: 5px 15px; /* Balanced padding */
+  border-radius: 5px; /* Rounded corners for a soft finish */
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
 
-.sidebar nav ul li a.active,
-.sidebar nav ul li a:hover {
-    color: #01c4c4; /* Change color on hover */
+.logo:hover {
+  transform: scale(1.05);
+  color: #fff;
+  background-color: #f0a500;
 }
 
-/* Main Content */
-.content {
-    background-color: #111;
-    color: #fff;
-    width: 80%; /* Main content takes the remaining space */
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+
+
+/* Home Section */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
 }
 
-/* Hero Section */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.home-content {
+  margin-top: 20px;
 }
 
-.hero-text {
-    max-width: 60%;
+.greeting {
+  margin-bottom: 20px;
 }
 
-.hero-text h1 {
-    font-size: 3rem;
-    color: #01c4c4;
-    margin-bottom: 10px;
+.greeting span {
+  font-size: 24px;
+  color: #f0a500;
 }
 
-.hero-text .profession {
-    font-size: 1.5rem;
-    color: #01c4c4;
-    margin-bottom: 15px;
+.highlight {
+  color: #f0a500;
 }
 
-.hero-text .description {
-    font-size: 1.2rem;
-    margin-bottom: 25px;
+h1 {
+  font-size: 48px;
+  margin: 10px 0;
 }
 
-.hero-text .btn {
-    padding: 10px 20px;
-    background-color: #01c4c4;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
+p {
+  font-size: 24px;
 }
 
-.hero-text .btn:hover {
-    background-color: #028b8b;
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
 }
 
-.hero-image img {
-    width: 200px;
-    border-radius: 50%;
+/* Social Icons */
+.social-icons {
+  margin-top: 20px;
 }
 
-/* Theme Selector */
-.theme-selector {
-    margin-top: 40px;
+.social-icons .icon {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #f0a500;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.theme-selector p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+.social-icons .icon i {
+  margin-right: 8px;
 }
 
-.theme-selector .colors {
-    display: flex;
-    gap: 10px;
+.social-icons .icon:hover {
+  color: #fff;
 }
 
-.theme-selector .color {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
+/* Particles Container */
+#particles-js {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
-.red { background-color: red; }
-.orange { background-color: orange; }
-.green { background-color: green; }
-.blue { background-color: blue; }
-.pink { background-color: pink; }
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  color: #f0a500;
+}
+
+html, body {
+  height: 100%; /* Ensures the body takes the full height of the page */
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.projects-section {
+  flex: 1; /* Allows the content section to take up available space */
+  padding: 50px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Additional existing styles */

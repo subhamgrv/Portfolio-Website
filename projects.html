@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Subham Gaurav - Projects</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/project.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+    
 </head>
+
 <body>
-    <div class="container">
-        <!-- Sidebar Menu -->
-        <aside class="sidebar">
-            <img src="images/profile.jpg" alt="Profile Image" style="width: 100%; border-radius: 50%; margin-bottom: 20px;">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="kaggle.html" class="active">Kaggle Projects</a></li>
-                    <li><a href="aboutme.html">About me</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <!-- Main Content Area -->
-        <main class="content">
-            <h1>Projects</h1>
-            
-            <!-- Existing Projects -->
-            <ul id="project-list">
-                <li>Life Insurance Management System (LIMS) - MySQL, Java</li>
-                <li>Behavioral-based Students' Stress Detection - Python, OpenCV</li>
-                <li>Basic Banking App - Java, Android</li>
-            </ul>
+    <div id="particles-js"></div>
+    <header>
+        <nav>
+          <div class="logo">Subham Gaurav</div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="kaggle.html">Kaggle</a></li>
+            <li><a href="aboutme.html">aboutme</a></li>
+          </ul>
+        </nav>
+      </header>
 
-            <!-- Form to Add New Project -->
-            <h2>Add a New Project</h2>
-            <form id="project-form">
-                <input type="text" id="project-name" placeholder="Project Name" required>
-                <input type="text" id="project-description" placeholder="Project Description" required>
-                <button type="submit">Add Project</button>
-            </form>
-        </main>
-    </div>
+    <section class="projects-section">
+        <h2>My <span style="color: #8000ff;">Projects</span></h2>
+        <p>My projects make use of a vast variety of the latest technology tools. My best experience is to create Data
+            Science projects</p>
 
-    <script src="js/script.js"></script>
+        <!-- Project grid that will be populated dynamically -->
+        <div class="project-grid" id="project-grid">
+            <!-- Projects will be inserted here by JavaScript -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Deployed on GitHub Pages</p>
+      </footer>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="js/projects.js"></script>
+    <script src="js/particles-config.js"></script>
 </body>
+
 </html>
