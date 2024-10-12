@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Applied Data Science Capstone",
+        "date": "TBD",
+        "description": "Description of the Applied Data Science Capstone course.",
+        "image": "assets/images/Certificates/Applied Data Science Capstone.png"
+    },
+    {
+        "name": "Data Analysis with Python",
+        "date": "TBD",
+        "description": "Description of the Data Analysis with Python course.",
+        "image": "assets/images/Certificates/Data Analysis with Python.png"
+    },
+    {
+        "name": "Data Science Methodology",
+        "date": "TBD",
+        "description": "Description of the Data Science Methodology course.",
+        "image": "assets/images/Certificates/Data Science Methodology.png"
+    },
+    {
+        "name": "What is Data Science",
+        "date": "TBD",
+        "description": "Description of the What is Data Science course.",
+        "image": "assets/images/Certificates/What is Data Science.png"
+    },
+    {
+        "name": "Tools for Data Science",
+        "date": "TBD",
+        "description": "Description of the Tools for Data Science course.",
+        "image": "assets/images/Certificates/Tools for Data Science.png"
+    },
+    {
+        "name": "Python Project for Data Science",
+        "date": "TBD",
+        "description": "Description of the Python Project for Data Science course.",
+        "image": "assets/images/Certificates/Python Project for Data Science.png"
+    },
+    {
+        "name": "Python for Data Science, AI & Development",
+        "date": "TBD",
+        "description": "Description of the Python for Data Science, AI & Development course.",
+        "image": "assets/images/Certificates/Python for Data Science, AI & Development.png"
+    },
+    {
+        "name": "Programming in JAVA",
+        "date": "TBD",
+        "description": "Description of the Programming in JAVA course.",
+        "image": "assets/images/Certificates/Programming in JAVA.png"
+    },
+    {
+        "name": "Programming for Everybody (Getting Started with Python)",
+        "date": "TBD",
+        "description": "Description of the Programming for Everybody (Getting Started with Python) course.",
+        "image": "assets/images/Certificates/Programming for Everybody (Getting Started with Python).png"
+    },
+    {
+        "name": "Minecraft Apply and Enrich: Chemistry",
+        "date": "6/11/2021",
+        "description": "Certificate for successfully completing the Minecraft Apply and Enrich: Chemistry course.",
+        "image": "assets/images/Certificates/Microsoft Apply and Enrich Chemistry.png"
+    },
+    {
+        "name": "Machine Learning with Python",
+        "date": "TBD",
+        "description": "Description of the Machine Learning with Python course.",
+        "image": "assets/images/Certificates/Machine Learning with Python.png"
+    },
+    {
+        "name": "Databases and SQL for Data Science with Python",
+        "date": "TBD",
+        "description": "Description of the Databases and SQL for Data Science with Python course.",
+        "image": "assets/images/Certificates/Databases and SQL for Data Science with Python.png"
+    },
+    {
+        "name": "Data Visualization with Python",
+        "date": "TBD",
+        "description": "Description of the Data Visualization with Python course.",
+        "image": "assets/images/Certificates/Data Visualization with Python.png"
+    },
+    {
+        "name": "Data Structure and Algorithms using JAVA",
+        "date": "TBD",
+        "description": "Description of the Data Structure and Algorithms using JAVA course.",
+        "image": "assets/images/Certificates/Data Structure and Algorithms using JAVA.png"
+    }
+]
