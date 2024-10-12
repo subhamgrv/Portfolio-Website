@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Me - Subham Gaurav</title>
     <link rel="stylesheet" href="css/styles.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar Menu -->
-        <aside class="sidebar">
-            <img src="images/profile.jpg" alt="Profile Image" style="width: 100%; border-radius: 50%; margin-bottom: 20px;">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="kaggle.html" class="active">Kaggle Projects</a></li>
-                    <li><a href="aboutme.html">About me</a></li>
-                </ul>
-            </nav>
-        </aside>
 
-        <!-- Main Content Area -->
-        <main class="content">
-            <iframe src="https://subhamgrv.github.io/CV_website/" width="100%" height="100%" style="border: none; height: calc(100vh - 20px);"></iframe>
-        </main>
-    </div>
+    <!-- Particles.js container, added as a background -->
+    <div id="particles-js"></div>
 
-    <script src="js/script.js"></script>
+    <header>
+        <nav>
+            <div class="logo">Subham Gaurav</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="kaggle.html">Kaggle</a></li>
+                <li><a href="aboutme.html" class="active">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content">
+        <!-- Loading the external webpage in the iframe -->
+        <iframe src="https://subhamgrv.github.io/CV_website/" width="100%" height="100%" style="border: none; height: calc(100vh - 100px);"></iframe>
+    </main>
+
+    <footer>
+        <p>Deployed on GitHub Pages</p>
+    </footer>
+
+    <!-- JavaScript for particles background -->
+    <script src="js/particles-config.js"></script>
 </body>
 </html>

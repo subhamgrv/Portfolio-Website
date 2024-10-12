@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Titanic - Machine Learning from Disaster",
+        "url": "https://www.kaggle.com/c/titanic",
+        "description": "The Titanic dataset is a classic machine learning problem. Predict which passengers survived the Titanic shipwreck.",
+        "difficulty": "Beginner",
+        "technologies": ["Python", "Pandas", "Scikit-learn"]
+    },
+    {
+        "name": "House Prices - Advanced Regression Techniques",
+        "url": "https://www.kaggle.com/c/house-prices-advanced-regression-techniques",
+        "description": "Use advanced regression techniques to predict house prices based on various features of the house.",
+        "difficulty": "Intermediate",
+        "technologies": ["Python", "R", "XGBoost"]
+    },
+    {
+        "name": "Digit Recognizer - Handwritten Digit Classification",
+        "url": "https://www.kaggle.com/c/digit-recognizer",
+        "description": "Use computer vision techniques to classify handwritten digits from images.",
+        "difficulty": "Intermediate",
+        "technologies": ["Python", "OpenCV", "TensorFlow"]
+    }
+]

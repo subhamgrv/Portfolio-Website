@@ -145,20 +145,6 @@ p {
   z-index: -1;
 }
 
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-footer p {
-  color: #f0a500;
-}
 
 html, body {
   height: 100%; /* Ensures the body takes the full height of the page */
@@ -201,13 +187,69 @@ nav {
 }
 
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  background-color: #333; /* Example background color for the footer */
+  color: white; /* Text color */
+  text-align: center; /* Center the footer text */
+  padding: 10px 0; /* Padding for spacing */
+  position: relative; /* Ensure it can be positioned */
+}
+
+
+footer p {
+  color: #f0a500;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* This allows the content to take available space */
+}
+
+footer {
+  background-color: #333; /* Example background color for the footer */
+  color: white; /* Text color */
+  text-align: center; /* Center the footer text */
+  padding: 10px 0; /* Padding for spacing */
+  position: relative; /* Ensure it can be positioned */
 }
 
 /* Additional existing styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Ensure the body takes up the full height */
+}
+
+body {
+  display: flex;          /* Use Flexbox */
+  flex-direction: column; /* Stack children vertically */
+}
+
+header {
+  background: #333;      /* Adjust as needed */
+  color: #fff;           /* Adjust as needed */
+  padding: 10px 0;       /* Add some padding */
+}
+
+.kaggle-section {
+  flex: 1; /* Allows the content section to take up available space */
+  padding: 50px;
+  text-align: center;
+}
+
+footer {
+  background: #333;      /* Adjust as needed */
+  color: #fff;           /* Adjust as needed */
+  text-align: center;    /* Center the footer text */
+  padding: 10px 0;       /* Add some padding */
+}

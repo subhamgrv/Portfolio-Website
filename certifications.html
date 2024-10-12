@@ -3,37 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certifications</title>
+    <title>Subham Gaurav - Certifications</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/certificate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar Menu -->
-        <aside class="sidebar">
-            <img src="images/profile.jpg" alt="Profile Image" style="width: 100%; border-radius: 50%; margin-bottom: 20px;">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="kaggle.html" class="active">Kaggle Projects</a></li>
-                    <li><a href="aboutme.html">About me</a></li>
-                </ul>
-            </nav>
-        </aside>
-
-        <!-- Main Content Area -->
-        <main class="content">
-            <h1>Certifications</h1>
-            <ul>
-                <li>IBM Data Science Professional Certificate (10/12 Courses Completed)</li>
-                <li>Coursera - Deep Learning Specialization</li>
-                <li>NPTEL - Java Programming</li>
-                <!-- Add more certifications -->
+    <div id="particles-js"></div>
+    <header>
+        <nav>
+            <div class="logo">Subham Gaurav</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="certifications.html" class="active">Certifications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="kaggle.html">Kaggle</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
             </ul>
-        </main>
-    </div>
+        </nav>
+    </header>
 
-    <script src="js/script.js"></script>
+    <main class="content">
+        <h1>Certifications</h1>
+        <div class="certification-grid" id="certification-grid">
+            <!-- Certifications will be inserted here by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>Deployed on GitHub Pages</p>
+    </footer>
+
+    <script src="js/certificate.js"></script>
+    <script src="js/particles-config.js"></script>
 </body>
 </html>

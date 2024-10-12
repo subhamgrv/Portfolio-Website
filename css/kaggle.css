@@ -1,0 +1,60 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Ensure the body takes up the full height */
+}
+
+body {
+    display: flex;          /* Use Flexbox */
+    flex-direction: column; /* Stack children vertically */
+}
+
+header {
+    background: #333;      /* Adjust as needed */
+    color: #fff;           /* Adjust as needed */
+    padding: 10px 0;       /* Add some padding */
+}
+
+.kaggle-section {
+    flex: 1;               /* Allow this section to grow and fill the space */
+    padding: 20px;         /* Add some padding */
+}
+
+.kaggle-section h2 {
+    margin-bottom: 20px;   /* Increase space below the heading */
+}
+
+.kaggle-section p {
+    margin-bottom: 30px;   /* Increase space below the paragraph */
+}
+
+#kaggle-list {
+    list-style-type: none;  /* Remove default list styling */
+    padding: 0;             /* Remove default padding */
+}
+
+#kaggle-list li {
+    margin-bottom: 20px;    /* Add space between each Kaggle project */
+}
+
+#kaggle-list li a {
+    color: #8000ff;         /* Change the link color */
+    text-decoration: none;   /* Remove underline from links */
+    padding: 5px;           /* Add some padding for better click area */
+}
+
+#kaggle-list li a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+footer {
+    background: #333;      /* Adjust as needed */
+    color: #fff;           /* Adjust as needed */
+    text-align: center;    /* Center the footer text */
+    padding: 10px 0;       /* Add some padding */
+}

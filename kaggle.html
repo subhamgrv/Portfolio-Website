@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaggle Projects</title>
+    <title>Subham Gaurav - Kaggle Projects</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/kaggle.css"> <!-- Include the new CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
-<body>
-    <div class="container">
-        <!-- Sidebar Menu -->
-        <aside class="sidebar">
-            <img src="images/profile.jpg" alt="Profile Image" style="width: 100%; border-radius: 50%; margin-bottom: 20px;">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="kaggle.html" class="active">Kaggle Projects</a></li>
-                    <li><a href="aboutme.html">About me</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <!-- Main Content Area -->
-        <main class="content">
-            <h1>Kaggle Projects</h1>
 
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <nav>
+            <div class="logo">Subham Gaurav</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="kaggle.html" class="active">Kaggle</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="kaggle-section">
+        <h2>Kaggle <span style="color: #8000ff;">Projects</span></h2>
+        <p>Explore my projects on Kaggle, showcasing a variety of data science challenges and solutions.</p>
+
+        <div>
             <!-- Existing Kaggle Projects -->
             <ul id="kaggle-list">
-                <li>Titanic - Machine Learning from Disaster</li>
-                <li>House Prices - Advanced Regression Techniques</li>
-                <li>Digit Recognizer - Handwritten Digit Classification</li>
+                <!-- Projects will be dynamically loaded here -->
             </ul>
+        </div>
+       
+    </section>
 
-            <!-- Form to Add New Kaggle Project -->
-            <h2>Add a New Kaggle Project</h2>
-            <form id="kaggle-form">
-                <input type="text" id="kaggle-name" placeholder="Kaggle Project Name" required>
-                <input type="url" id="kaggle-url" placeholder="Kaggle Repository URL" required>
-                <button type="submit">Add Kaggle Project</button>
-            </form>
-        </main>
-    </div>
+    <footer>
+        <p>Deployed on GitHub Pages</p>
+    </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Link to the external JavaScript file -->
+    <script src="js/kaggle.js"></script> <!-- Include the new JavaScript file -->
+    <script src="js/particles-config.js"></script>
 </body>
+
 </html>
